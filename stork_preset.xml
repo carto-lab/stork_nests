@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0" 
-	author="zbigniew[at]openstreetmap.pl"
-	version="2014.6.19"
+	author="zbigniew[at]openstreetmap.pl, physgeo[at]ukr.net"
+	version="2014.6.20"
 	shortdescription="Stork nests" 
 	description="Preset for stork nests"
 	pl.shortdescription="Bocianie gniazda" 
@@ -13,7 +13,7 @@
 
      	<item name="Nest" pl.name="Gniazdo" uk.name="Гніздо" ru.name="Гнездо" type="node" icon="http://osmapa.pl/bociany2014/favicon.png" >
      		<key key="natural" value="birds_nest" />
-     		
+			<space />			
 			<label text="Nest" pl.text="Gniazdo" uk.text="Гніздо" ru.text="Гнездо" />
 			<combo text="Bird genius" pl.text="Gatunek ptactwa" uk.text="Вид птаха" ru.text="Вид птицы" key="birds_nest" default="stork" >
 				<list_entry value="stork" short_description="White stork (Ciconia ciconia)" pl.short_description="bocian biały" uk.short_description="Біла Лелека" ru.short_description="Белый Аист" />
@@ -25,23 +25,31 @@
 				<list_entry value="roof" short_description="on roof" pl.short_description="na dachu" uk.short_description="на даху" ru.short_description="на крыше" />
 				<list_entry value="water_tower" short_description="on water tower" pl.short_description="na wieży ciśnień" uk.short_description="на водонапірній вежі" ru.short_description="на водонапорной башне" />
 			</combo>
-			<combo text="Platform" pl.text="Platforma" uk.text="Платформа" ru.text="Платформа" key="platform">
-				<list_entry value="yes" />
+			<combo text="Artificial platform" pl.text="Sztuczna platforma" uk.text="Штучна платформа" ru.text="Искусственная платформа" key="nest_platform"  default="no" >
 				<list_entry value="no" />
+				<list_entry value="yes" />
 			</combo>
-			
+						
 		<optional>
-			<combo text="Nest status (optional)" pl.text="Stan gniazda (opcjonalnie)" uk.text="Стан гнізда (додатково)" ru.text="Состояние гнезда (дополнительно)" key="nest_status:2014">
+			<combo text="Nest status" pl.text="Stan gniazda" uk.text="Стан гнізда" ru.text="Состояние гнезда" key="nest_status:2014">
 				<list_entry value="empty" short_description="dropped (if only platform left)" pl.short_description="opuszczone (np. została sama platforma)" uk.short_description="залишине (напр. лишилася сама платформа)" ru.short_description="покинутое (напр. осталась только платформа)" />
 				<list_entry value="damaged" short_description="(if platform is damage too)" pl.short_description="zniszczone (łącznie z platformą)" uk.short_description="знищене (включаючи платформу)" ru.short_description="разрушенное (в том числе и платформа)" />
 			</combo>
 			<space />
 			<text text="Image (URL)" pl.text="Zdjęcie (URL)" uk.text="Світлина (URL)" ru.text="Фотография (URL)" key="image" />
 			<space />
-			<label text="Tag as (only if pole):" pl.text="Otaguj jako (dotyczy tylko słupa):" uk.text="Тип опори (якщо на опорі):" ru.text="Тип опоры (если на опоре):" />
-			<check key="power" value_on="pole" text="power pole" pl.text="słup energetyczny" uk.text="ЛЕП" ru.text="ЛЭП" delete_if_empty="true" disable_off="true" />
-			<check key="communication" value_on="pole" text="communication pole" pl.text="słup telekomunikacyjny" uk.text="зв'язок" ru.text="связь" delete_if_empty="true" disable_off="true" />
-			<check key="highway" value_on="street_lamp" text="street lamp" pl.text="latarnia" uk.text="освітлення" ru.text="освещение" delete_if_empty="true" disable_off="true" />
-		</optional>
+			<text text="Comment" pl.text="Komentarz" uk.text="Коментар" ru.text="Комментарий" key="comment" />
+			<space />
+			<label text="Tag as (only one option!):" pl.text="Otaguj jako (tylko jedna opcja!):" uk.text="Додати тег (обрати  один варіант!):" ru.text="Добавить тег (выбрать только один вариант!):" />
+			<space />
+			<check key="power" value_on="pole" text="power pole" pl.text="słup energetyczny" uk.text="опора ЛЕП" ru.text="опора ЛЭП" delete_if_empty="true" disable_off="true" />
+			<check key="communication" value_on="pole" text="communication pole" pl.text="słup telekomunikacyjny" uk.text="опора лінї зв'язку" ru.text="опора линии связи" delete_if_empty="true" disable_off="true" />
+			<check key="highway" value_on="street_lamp" text="street lamp" pl.text="latarnia" uk.text="вуличний ліхтар" ru.text="уличный фонарь" delete_if_empty="true" disable_off="true" />
+			<space />
+			<check key="natural" value_on="tree" text="tree" pl.text="drzewo" uk.text="дерево" ru.text="дерево" delete_if_empty="true" disable_off="true" />
+			<check key="man_made" value_on="water_tower" text="water tower" pl.text="wieża ciśnień" uk.text="водонапірна вежа" ru.text="водонапорная башня" delete_if_empty="true" disable_off="true" />
+			<check key="man_made" value_on="chimney" text="chimney" pl.text="duży komin" uk.text="труба димова (промислова)" ru.text="дымовая труба (промышленная)" delete_if_empty="true" disable_off="true" />
+			</optional>
 	</item>
+<separator/>
 </presets>
