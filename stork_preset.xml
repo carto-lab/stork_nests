@@ -12,9 +12,9 @@
 	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd" >
 
      	<item name="Nest" pl.name="Gniazdo" uk.name="Гніздо" ru.name="Гнездо" type="node" icon="http://osmapa.pl/bociany2014/favicon.png" >
-     		<key key="natural" value="birds_nest" />
-			<space />			
+     		<key key="natural" value="birds_nest" />			
 			<label text="Nest" pl.text="Gniazdo" uk.text="Гніздо" ru.text="Гнездо" />
+			<space />
 			<combo text="Bird genius" pl.text="Gatunek ptactwa" uk.text="Вид птаха" ru.text="Вид птицы" key="birds_nest" default="stork" >
 				<list_entry value="stork" short_description="White stork (Ciconia ciconia)" pl.short_description="bocian biały" uk.short_description="Біла Лелека" ru.short_description="Белый Аист" />
 			</combo>	
@@ -40,7 +40,7 @@
 			<space />
 			<text text="Comment" pl.text="Komentarz" uk.text="Коментар" ru.text="Комментарий" key="comment" />
 			<space />
-			<label text="Tag as (only one option!):" pl.text="Otaguj jako (tylko jedna opcja!):" uk.text="Додати тег (обрати  один варіант!):" ru.text="Добавить тег (выбрать только один вариант!):" />
+			<label text="Tag as (only one option!):" pl.text="Otaguj jako (tylko jedna opcja!):" uk.text="Додати тег (обрати лише один варіант!):" ru.text="Добавить тег (выбрать только один вариант!):" />
 			<space />
 			<check key="power" value_on="pole" text="power pole" pl.text="słup energetyczny" uk.text="опора ЛЕП" ru.text="опора ЛЭП" delete_if_empty="true" disable_off="true" />
 			<check key="communication" value_on="pole" text="communication pole" pl.text="słup telekomunikacyjny" uk.text="опора лінї зв'язку" ru.text="опора линии связи" delete_if_empty="true" disable_off="true" />
