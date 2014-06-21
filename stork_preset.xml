@@ -11,7 +11,7 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
 	xsi:schemaLocation="http://josm.openstreetmap.de/tagging-preset-1.0 tagging-preset.xsd" >
 
-     	<item name="Storks" pl.name="Bociany" uk.name="Лелеки" ru.name="Аисты" type="node" icon="http://cartolab.ua/files/stork.png" >
+     	<item name="Storks" pl.name="Bociany" uk.name="Лелеки" ru.name="Аисты" type="node" icon="http://pzf.gis.kh.ua/images/stork.png" >
      		<key key="natural" value="birds_nest" />			
 			<label text="Nest" pl.text="Gniazdo" uk.text="Гніздо" ru.text="Гнездо" />
 			<space />
