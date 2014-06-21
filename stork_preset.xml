@@ -38,7 +38,7 @@
 			<space />
 			<text text="Image (URL)" pl.text="Zdjęcie (URL)" uk.text="Світлина (URL)" ru.text="Фотография (URL)" key="image" />
 			<space />
-			<text text="Comment" pl.text="Komentarz" uk.text="Коментар" ru.text="Комментарий" key="comment" />
+			<text text="Description" pl.text="Opisanie" uk.text="Opis" ru.text="Опис" key="description" />
 			<space />
 			<label text="Tag as (only one option!):" pl.text="Otaguj jako (tylko jedna opcja!):" uk.text="Додати тег (обрати лише один варіант!):" ru.text="Добавить тег (выбрать только один вариант!):" />
 			<space />
